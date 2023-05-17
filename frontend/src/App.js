@@ -59,10 +59,10 @@ function App() {
     <AuthContextProvider>
       <Router>
         <div>
-          <Route path="/" component={Sidebar}  />
-          <Route path="/" component={Navbar}/>
+          <Route path="/dashboard" component={Sidebar}  />
+          <Route path="/dashboard" component={Navbar}/>
 
-          <Route path="/" exact component={Dashboard} />
+          <Route path="/dashboard" exact component={Dashboard} />
 
 
           <Route path="/dashboard/addBusroute" exact component={AddBusroute} />
@@ -98,7 +98,7 @@ function App() {
 
 
           <Route exact path="/register"><Register /></Route>
-          {/* <Route exact path="/"><Login /></Route> */}
+          <Route exact path="/"><Login /></Route>
 
 
 
